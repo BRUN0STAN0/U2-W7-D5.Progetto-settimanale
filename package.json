@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2"
-  }
+  },
+  "name": "u2-w7-d5.progetto-settimanale",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass assets/scss/app.scss assets/css/app.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BRUN0STAN0/U2-W7-D5.Progetto-settimanale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BRUN0STAN0/U2-W7-D5.Progetto-settimanale/issues"
+  },
+  "homepage": "https://github.com/BRUN0STAN0/U2-W7-D5.Progetto-settimanale#readme",
+  "description": ""
 }

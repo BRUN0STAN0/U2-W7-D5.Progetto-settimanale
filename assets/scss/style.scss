@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+   
+
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    overflow: hidden;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $primary;
+    text-shadow: 1px 1px 1px white;
+    filter: drop-shadow(1px 1px 5px white);
+}
+
+#hero {
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#input-search {
+    width: 50vw;
+    background-color: $secondary;
+    color: white;
+    border: 0;
+}
+
+#input-search::placeholder {
+    color: rgb(154, 154, 154);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: $primary;
+}
+
+#bar-audio {
+    background-color: $primary;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    border-top: 5px solid $secondary;
+}
+.container-output {
+    position: relative;
+    top: 40vh;
+    height: 100vh;
+    left: 10vw;
+    border-bottom-left-radius: 2000px;
+
+}
+#output {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.card {
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+}
+
+.preview-link {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #hero {
+        display: none;
+        opacity: 0;
+    }
+    .container-output {
+        top: 15vh;
+    }
+}

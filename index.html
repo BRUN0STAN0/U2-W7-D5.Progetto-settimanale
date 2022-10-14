@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musicalità</title>
+    <title>WAVE</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
-    <input type="text" id="input-search" />
-    <button id="input-button">Search</button>
-    <div id="output"></div>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid justify-content-center">
+        <div class="d-flex">
+          <input id="input-search" class="form-control me-2" type="text" placeholder="explore our wave..." />
+          <button id="input-button" class="btn btn-outline-primary">Search here your wave</button>
+        </div>
+      </div>
+    </nav>
+    <div id="hero" class="d-flex justify-content-center align-items-center text-white fs-1">explore our wave</div>
+    <div id="home" class="d-flex justify-content-center align-items-center fs-1">discover the impossible</div>
+    <div class="container-output">
+      <div id="output"></div>
+    </div>
+    <!-- class="container d-flex flex-wrap gap-2 mt-5" -->
+    <div id="bar-audio"></div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
