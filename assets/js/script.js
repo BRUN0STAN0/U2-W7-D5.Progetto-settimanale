@@ -53,3 +53,16 @@ scrollContainer.addEventListener("wheel", (e) => {
     scrollContainer.scrollLeft -= 241;
   }
 });
+
+// ! SCROLL WITH LIBRARY HAMMER -> FOR TOUCHSCREEN DEVICES
+let hammer = new Hammer.Manager(scrollContainer);
+let swipe = new Hammer.Swipe();
+
+hammer.add(swipe);
+
+hammer.on("swipeleft", function (e) {
+  scrollContainer.scrollLeft += e.deltaY + 241;
+});
+hammer.on("swiperight", function (e) {
+  scrollContainer.scrollLeft -= 241;
+});
