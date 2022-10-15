@@ -63,6 +63,6 @@ hammer.add(swipe);
 hammer.on("swipeleft", function (e) {
   scrollContainer.scrollLeft += e.deltaY + 241;
 });
-hammer.on("swiperight", function (e) {
+hammer.on("swiperight", function () {
   scrollContainer.scrollLeft -= 241;
 });
